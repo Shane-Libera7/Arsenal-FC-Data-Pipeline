@@ -1,0 +1,10 @@
+soccerdata
+pandas
+numpy
+psycopg2-binary
+sqlalchemy
+matplotlib
+seaborn
+pytest
+schedule
+python-dotenv
