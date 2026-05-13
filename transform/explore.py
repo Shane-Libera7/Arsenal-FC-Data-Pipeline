@@ -19,3 +19,10 @@ print(("-- PLAYER STATS--"))
 print(player_stats.shape)
 print(player_stats.dtypes)
 print(player_stats.isnull().sum())
+
+
+
+
+print(player_stats.index.get_level_values(2).unique())
+
+print(shooting_stats.columns.tolist())
