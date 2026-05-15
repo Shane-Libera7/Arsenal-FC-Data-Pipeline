@@ -18,9 +18,9 @@ engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT
 
 
 #Load Clean Data 
-team_stats_fbref = pd.read_csv("data/team_stats_clean.csv", header=[0,1], index_col=[0,1,2])
+team_stats_fbref = pd.read_csv("data/team_stats_clean.csv")
 team_stats_understat = pd.read_csv("data/team_stats_understat_clean.csv")
-shooting_stats = pd.read_csv("data/shooting_stats_clean.csv", header=[0,1], index_col=[0,1,2])
+shooting_stats = pd.read_csv("data/shooting_stats_clean.csv")
 player_stats = pd.read_csv("data/player_stats_clean.csv")
 
 #Reset Index on FBref files to make it suitable for PostgreSQL
@@ -30,15 +30,19 @@ shooting_stats = shooting_stats.reset_index()
 
 #Load data into PostgreSQL
 team_stats_fbref.to_sql("fbref_team_stats", engine, if_exists="replace", index=False)
+print(team_stats_fbref.shape)
 print("FBref Team Stats loaded")
 
 team_stats_understat.to_sql("understat_team_stats", engine, if_exists="replace", index=False)
+print(team_stats_understat.shape)
 print("Understat Team Stats loaded")
 
 shooting_stats.to_sql("shooting_stats", engine, if_exists="replace", index=False)
+print(shooting_stats.shape)
 print("Shooting Stats loaded")
 
 player_stats.to_sql("player_stats", engine, if_exists="replace", index=False)
+print(player_stats.shape)
 print("Arsenal Player Stats Loaded")
 
 print("All data loaded into PostgreSQL successfully")
