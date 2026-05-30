@@ -148,7 +148,7 @@ The 21/22 season is the most telling data point as City and Liverpool both press
 
 By 23/24 the correlation had weakened as seen when Spurs had the highest pressing intensity of any top 6 side yet finished on just 66 points. Arsenal's title winning season averaged in the mid range of their pressing statistics in the dataset, suggesting pressing was a contributing factor but no longer a guarantee of points.
 
-[View Interactive Chart](https://Shane _Libera7.github.io/Arsenal-FC-Data-Pipeline/q3_pressing_vs_points.html)
+[View Interactive Chart](https://Shane-Libera7.github.io/Arsenal-FC-Data-Pipeline/q3_pressing_vs_points.html)
 
 
 ---
