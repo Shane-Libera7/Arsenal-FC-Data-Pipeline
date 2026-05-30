@@ -56,7 +56,7 @@ Arsenal-FC-Data-Pipeline/
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/Shane_Libera7/Arsenal-FC-Data-Pipeline.git
+git clone https://github.com/Shane-Libera7/Arsenal-FC-Data-Pipeline.git
 cd Arsenal-FC-Data-Pipeline
 ```
 
